@@ -27,9 +27,9 @@ set formatoptions+=r
 match ErrorMsg '\%>80v.\+'
 
 " Expand tabs in C files to spaces
-au BufRead,BufNewFile *.{c,h,java} set expandtab
-au BufRead,BufNewFile *.{c,h,java} set shiftwidth=2
-au BufRead,BufNewFile *.{c,h,java} set tabstop=2
+au BufRead,BufNewFile *.{c,h,java,cpp} set expandtab
+au BufRead,BufNewFile *.{c,h,java,cpp} set shiftwidth=2
+au BufRead,BufNewFile *.{c,h,java,cpp} set tabstop=2
 " Expand tabs in bsv files to spaces
 au BufRead,BufNewFile *.{bsv} set expandtab
 au BufRead,BufNewFile *.{bsv} set shiftwidth=4
