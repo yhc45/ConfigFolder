@@ -24,6 +24,7 @@ set nohlsearch			" meh
 set bs=2			" fix backspacing in insert mode
 set bg=light
 set formatoptions+=r
+set hlsearch
 match ErrorMsg '\%>80v.\+'
 
 " Expand tabs in C files to spaces
@@ -31,9 +32,9 @@ au BufRead,BufNewFile *.{c,h,java,cpp} set expandtab
 au BufRead,BufNewFile *.{c,h,java,cpp} set shiftwidth=2
 au BufRead,BufNewFile *.{c,h,java,cpp} set tabstop=2
 " Expand tabs in bsv files to spaces
-au BufRead,BufNewFile *.{bsv} set expandtab
-au BufRead,BufNewFile *.{bsv} set shiftwidth=4
-au BufRead,BufNewFile *.{bsv} set tabstop=4
+au BufRead,BufNewFile *.{bsv,py,tcl} set expandtab
+au BufRead,BufNewFile *.{bsv,py,tcl} set shiftwidth=4
+au BufRead,BufNewFile *.{bsv,py,tcl} set tabstop=4
 
 
 " Do not expand tabs in assembly file.  Make them 8 chars wide.
