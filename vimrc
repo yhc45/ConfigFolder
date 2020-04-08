@@ -32,9 +32,9 @@ au BufRead,BufNewFile *.{c,h,java,cpp} set expandtab
 au BufRead,BufNewFile *.{c,h,java,cpp} set shiftwidth=2
 au BufRead,BufNewFile *.{c,h,java,cpp} set tabstop=2
 " Expand tabs in bsv files to spaces
-au BufRead,BufNewFile *.{bsv,py,tcl} set expandtab
-au BufRead,BufNewFile *.{bsv,py,tcl} set shiftwidth=4
-au BufRead,BufNewFile *.{bsv,py,tcl} set tabstop=4
+au BufRead,BufNewFile *.{bsv,py,tcl,go} set expandtab
+au BufRead,BufNewFile *.{bsv,py,tcl,go} set shiftwidth=4
+au BufRead,BufNewFile *.{bsv,py,tcl,go} set tabstop=4
 
 
 " Do not expand tabs in assembly file.  Make them 8 chars wide.
